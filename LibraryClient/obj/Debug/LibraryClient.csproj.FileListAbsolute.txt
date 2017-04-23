@@ -1,0 +1,14 @@
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\LibraryClient\bin\Debug\LibraryClient.exe.config
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\LibraryClient\bin\Debug\LibraryClient.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\LibraryClient\bin\Debug\LibraryClient.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\LibraryClient\obj\Debug\LibraryClient.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\LibraryClient\obj\Debug\LibraryClient.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\LibraryClient\obj\Debug\LibraryClient.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\bin\Debug\LibraryClient.exe.config
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\bin\Debug\LibraryClient.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\bin\Debug\LibraryClient.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\obj\Debug\LibraryClient.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\obj\Debug\LibraryClient.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\obj\Debug\LibraryClient.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\LibraryClient\bin\Debug\System.Collections.Immutable.xml

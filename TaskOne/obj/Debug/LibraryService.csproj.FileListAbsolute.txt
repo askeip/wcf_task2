@@ -1,0 +1,14 @@
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\TaskOne\bin\TaskOne.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\TaskOne\obj\Debug\TaskOne.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\TaskOne\bin\TaskOne.exe.config
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\TaskOne\bin\TaskOne.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\TaskOne\obj\Debug\TaskOne.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskOne\TaskOne\obj\Debug\LibraryService.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\bin\TaskOne.exe.config
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\obj\Debug\TaskOne.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\obj\Debug\TaskOne.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\bin\TaskOne.exe
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\bin\TaskOne.pdb
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\obj\Debug\LibraryService.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\bin\System.Collections.Immutable.dll
+C:\Users\Евгений\Desktop\Универ\Сервисы. Взаимодействия приложений\TaskTwo\TaskOne\bin\System.Collections.Immutable.xml
