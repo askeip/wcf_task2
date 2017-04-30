@@ -55,6 +55,12 @@
   <wsdl:message name="ILibraryService_ReturnBook_OutputMessage">
     <wsdl:part name="parameters" element="tns:ReturnBookResponse" />
   </wsdl:message>
+  <wsdl:message name="ILibraryService_ConfirmChoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmChoice" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ConfirmChoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmChoiceResponse" />
+  </wsdl:message>
   <wsdl:message name="ILibraryService_LeaveLibrary_InputMessage">
     <wsdl:part name="parameters" element="tns:LeaveLibrary" />
   </wsdl:message>
@@ -85,6 +91,10 @@
     <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="ReturnBook">
       <wsdl:input wsaw:Action="http://tempuri.org/ILibraryService/ReturnBook" message="tns:ILibraryService_ReturnBook_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILibraryService/ReturnBookResponse" message="tns:ILibraryService_ReturnBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="false" msc:isTerminating="false" name="ConfirmChoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibraryService/ConfirmChoice" message="tns:ILibraryService_ConfirmChoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibraryService/ConfirmChoiceResponse" message="tns:ILibraryService_ConfirmChoice_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation msc:isInitiating="false" msc:isTerminating="true" name="LeaveLibrary">
       <wsdl:input wsaw:Action="http://tempuri.org/ILibraryService/LeaveLibrary" message="tns:ILibraryService_LeaveLibrary_InputMessage" />
@@ -141,6 +151,15 @@
     </wsdl:operation>
     <wsdl:operation name="ReturnBook">
       <soap12:operation soapAction="http://tempuri.org/ILibraryService/ReturnBook" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmChoice">
+      <soap12:operation soapAction="http://tempuri.org/ILibraryService/ConfirmChoice" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

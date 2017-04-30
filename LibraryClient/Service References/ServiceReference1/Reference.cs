@@ -176,6 +176,12 @@ namespace LibraryClient.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/ILibraryService/ReturnBook", ReplyAction="http://tempuri.org/ILibraryService/ReturnBookResponse")]
         System.Threading.Tasks.Task ReturnBookAsync(LibraryClient.ServiceReference1.Book book);
         
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/ILibraryService/ConfirmChoice", ReplyAction="http://tempuri.org/ILibraryService/ConfirmChoiceResponse")]
+        string ConfirmChoice();
+        
+        [System.ServiceModel.OperationContractAttribute(IsInitiating=false, Action="http://tempuri.org/ILibraryService/ConfirmChoice", ReplyAction="http://tempuri.org/ILibraryService/ConfirmChoiceResponse")]
+        System.Threading.Tasks.Task<string> ConfirmChoiceAsync();
+        
         [System.ServiceModel.OperationContractAttribute(IsTerminating=true, IsInitiating=false, Action="http://tempuri.org/ILibraryService/LeaveLibrary", ReplyAction="http://tempuri.org/ILibraryService/LeaveLibraryResponse")]
         void LeaveLibrary();
         
@@ -256,6 +262,14 @@ namespace LibraryClient.ServiceReference1 {
         
         public System.Threading.Tasks.Task ReturnBookAsync(LibraryClient.ServiceReference1.Book book) {
             return base.Channel.ReturnBookAsync(book);
+        }
+        
+        public string ConfirmChoice() {
+            return base.Channel.ConfirmChoice();
+        }
+        
+        public System.Threading.Tasks.Task<string> ConfirmChoiceAsync() {
+            return base.Channel.ConfirmChoiceAsync();
         }
         
         public void LeaveLibrary() {

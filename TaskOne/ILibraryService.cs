@@ -28,6 +28,9 @@ namespace TaskOne
         [OperationContract(IsInitiating = false)]
         void ReturnBook(Book book);
 
+        [OperationContract(IsInitiating = false)]
+        string ConfirmChoice();
+
         [OperationContract(IsInitiating = false, IsTerminating = true)]
         void LeaveLibrary();
     }

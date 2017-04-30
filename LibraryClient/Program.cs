@@ -53,13 +53,14 @@ namespace LibraryClient
         {
             var client = new LibraryServiceClient();
             client.LogIn("user2");
-            //AddSomeBooks(client);
+            AddSomeBooks(client);
             var books = new List<Book>();
             for (int i = 0; i < 6; i++)
             {
                 books.Add(client.TakeBook(client.GetBook(i)));
                 PrintBook(books[i]);
             }
+            Console.WriteLine(client.ConfirmChoice());
             for (int i = 0; i < 5; i++)
             {
                 client.ReturnBook(books[i]);

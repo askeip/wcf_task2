@@ -19,10 +19,12 @@ namespace TaskOne
         private static readonly Dictionary<string, List<Book>> UnnamedDictionary = new Dictionary<string, List<Book>>();
 
         private string userName;
+        private List<Book> chosenBooks;
 
         public void LogIn(string userName)
         {
             this.userName = userName;
+            chosenBooks = new List<Book>();
             if (!UnnamedDictionary.ContainsKey(userName))
                 UnnamedDictionary.Add(userName, new List<Book>());
             Console.WriteLine(userName + " came to library");
@@ -36,7 +38,6 @@ namespace TaskOne
 
         public Book GetBook(int id)
         {
-            Console.WriteLine("Someone getting book");
             if (AvailableBooks.Count > id)
             {
                 return AvailableBooks[id];
@@ -52,12 +53,6 @@ namespace TaskOne
 
         public Book TakeBook(Book book)
         {
-            Console.WriteLine("Someone taking book");
-            if (UnnamedDictionary[userName].Count >= 5)
-            {
-                Console.WriteLine("U cant take more than 5 books");
-                return null;
-            }
             var bookToTake = AvailableBooks.FirstOrDefault(z => z != null && z.Equals(book));
             if (bookToTake != null)
             {
@@ -75,6 +70,18 @@ namespace TaskOne
             UnnamedDictionary[userName]
                 .Remove(book);
             AvailableBooks[book.Id] = book;
+        }
+
+        public string ConfirmChoice()
+        {
+            if (UnnamedDictionary[userName].Count + chosenBooks.Count <= 5)
+            {
+                UnnamedDictionary[userName] = UnnamedDictionary[userName].Concat(chosenBooks)
+                    .ToList();
+                chosenBooks = new List<Book>();
+                return "Books taken";
+            }
+            return "You cant take more than 5 books";
         }
 
         public void LeaveLibrary()
