@@ -16,7 +16,7 @@ namespace TaskOne
         private static readonly List<Book> AvailableBooks = new List<Book>();
         private static readonly Dictionary<int, Book> TakenBooks = new Dictionary<int, Book>();
         
-        private static readonly Dictionary<string, List<Book>> UnnamedDictionary = new Dictionary<string, List<Book>>();
+        private static readonly Dictionary<string, List<Book>> UserActivity = new Dictionary<string, List<Book>>();
 
         private string userName;
         private List<Book> chosenBooks;
@@ -25,8 +25,8 @@ namespace TaskOne
         {
             this.userName = userName;
             chosenBooks = new List<Book>();
-            if (!UnnamedDictionary.ContainsKey(userName))
-                UnnamedDictionary.Add(userName, new List<Book>());
+            if (!UserActivity.ContainsKey(userName))
+                UserActivity.Add(userName, new List<Book>());
             Console.WriteLine(userName + " came to library");
         }
 
@@ -58,25 +58,25 @@ namespace TaskOne
             {
                 AvailableBooks[bookToTake.Id] = null;
                 TakenBooks.Add(bookToTake.Id, bookToTake);
-                UnnamedDictionary[userName].Add(bookToTake);
+                UserActivity[userName].Add(bookToTake);
             }
             return bookToTake;
         }
 
         public void ReturnBook(Book book)
         {
-            if (!UnnamedDictionary[userName].Any(z => z != null && z.Equals(book))) return;
+            if (!UserActivity[userName].Any(z => z != null && z.Equals(book))) return;
             TakenBooks.Remove(book.Id);
-            UnnamedDictionary[userName]
+            UserActivity[userName]
                 .Remove(book);
             AvailableBooks[book.Id] = book;
         }
 
         public string ConfirmChoice()
         {
-            if (UnnamedDictionary[userName].Count + chosenBooks.Count <= 5)
+            if (UserActivity[userName].Count + chosenBooks.Count <= 5)
             {
-                UnnamedDictionary[userName] = UnnamedDictionary[userName].Concat(chosenBooks)
+                UserActivity[userName] = UserActivity[userName].Concat(chosenBooks)
                     .ToList();
                 chosenBooks = new List<Book>();
                 return "Books taken";
